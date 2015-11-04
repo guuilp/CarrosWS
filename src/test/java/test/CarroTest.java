@@ -15,7 +15,6 @@ public class CarroTest extends TestCase {
 		carroService = (CarroService) SpringUtil.getInstance().getBean(CarroService.class);
 	}
 
-
 	public void testListaCarros() {
 		List<Carro> carros = carroService.getCarros();
 		assertNotNull(carros);
